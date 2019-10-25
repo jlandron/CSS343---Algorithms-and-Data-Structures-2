@@ -1,0 +1,141 @@
+Script started on Sat 06 Apr 2019 10:02:00 PM DST
+]0;JOSH@DESKTOP-FMLE93V: /mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[01;32mJOSH@DESKTOP-FMLE93V[00m:[01;34m/mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[00m$ exitscript assignment1Script.txt[12Pvalgrind ./a.out
+==37== Memcheck, a memory error detector
+==37== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==37== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==37== Command: ./a.out
+==37== 
+==37== error calling PR_SET_PTRACER, vgdb might block
+initial polynomials
+A =  +5x^7
+B =  +3x^4
+C =  +2
+D =  +5x^7
+X =  0
+Y =  0
+Z =  0
+Enter terms for polynomial A.  Enter a coefficient 
+then exponent for each term. Enter -1 -1 to terminate.
+4 10 3 100 -2 3 1 0 -1 -1
+Enter terms for polynomial B.  Enter a coefficient 
+then exponent for each term. Enter -1 -1 to terminate.
+5 10 4 5 2 4 3 99 -1 -1
+A = +3x^100 +4x^10 -2x^3 +1
+B = +3x^99 +5x^10 +4x^5 +2x^4
+
+Compute C = A + B:  +3x^100 +3x^99 +9x^10 +4x^5 +2x^4 -2x^3 +1
+
+A is not == B
+A is not == B
+
+Compute  Z1 = A2 - B2:  -3x^100 -3x^99 -1x^10 -4x^5 -2x^4 -2x^3 +1
+Compute  Z2 = B2 - A2:  -3x^100 +3x^99 +1x^10 +4x^5 +2x^4 +2x^3 -1
+
+Compute  D = A * B
+Before: D = +5x^7
+After:  D = +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +3x^99 +20x^20 +16x^15 +8x^14 -10x^13 +5x^10 -8x^8 -4x^7 +4x^5 +2x^4
+
+Test assignment operators
+Test binary mixed operators
+Y =  +3x^100 +4x^10 -2x^3 +1
+X =  +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +3x^99 +20x^20 +16x^15 +8x^14 -10x^13 +5x^10 -8x^8 -4x^7 +4x^5 +2x^4
+Z =  +3x^99 +5x^10 +4x^5 +2x^4
+Y is now =  +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +3x^100 +3x^99 +20x^20 +16x^15 +8x^14 -10x^13 +9x^10 -8x^8 -4x^7 +4x^5 +2x^4 -2x^3 +1
+X is now =  +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +6x^99 +20x^20 +16x^15 +8x^14 -10x^13 +10x^10 -8x^8 -4x^7 +8x^5 +4x^4
+Z is now =  +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +3x^100 +6x^99 +20x^20 +16x^15 +8x^14 -10x^13 +14x^10 -8x^8 -4x^7 +8x^5 +4x^4 -2x^3 +1
+Test compund binary operators
+X = +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +6x^99 +20x^20 +16x^15 +8x^14 -10x^13 +10x^10 -8x^8 -4x^7 +8x^5 +4x^4
+Y = +6x^100 +8x^10 -4x^3 +2
+
+Get and Set coefficient
+coeff of subscript 0 of D is: 0
+Doing getCoeff for term -20000
+D = +50x^20000 +9x^199 +15x^110 +12x^109 +12x^105 +6x^104 -6x^102 +3x^99 +20x^20 +16x^15 +8x^14 -10x^13 +5x^10 -8x^8 -4x^7 +4x^5 +2x^4 +50
+
+==37== 
+==37== HEAP SUMMARY:
+==37==     in use at exit: 72,704 bytes in 1 blocks
+==37==   total heap usage: 59 allocs, 58 frees, 176,240 bytes allocated
+==37== 
+==37== LEAK SUMMARY:
+==37==    definitely lost: 0 bytes in 0 blocks
+==37==    indirectly lost: 0 bytes in 0 blocks
+==37==      possibly lost: 0 bytes in 0 blocks
+==37==    still reachable: 72,704 bytes in 1 blocks
+==37==         suppressed: 0 bytes in 0 blocks
+==37== Rerun with --leak-check=full to see details of leaked memory
+==37== 
+==37== For counts of detected and suppressed errors, rerun with: -v
+==37== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;JOSH@DESKTOP-FMLE93V: /mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[01;32mJOSH@DESKTOP-FMLE93V[00m:[01;34m/mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[00m$ valgrind ./a.out
+==38== Memcheck, a memory error detector
+==38== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==38== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==38== Command: ./a.out
+==38== 
+==38== error calling PR_SET_PTRACER, vgdb might block
+initial polynomials
+A =  +5x^7
+B =  +3x^4
+C =  +2
+D =  +5x^7
+X =  0
+Y =  0
+Z =  0
+Enter terms for polynomial A.  Enter a coefficient 
+then exponent for each term. Enter -1 -1 to terminate.
+5 10 4 5 2 4 3 99 -1 -1
+Enter terms for polynomial B.  Enter a coefficient 
+then exponent for each term. Enter -1 -1 to terminate.
+5 10 4 5 2 4 3 99 -1 -1
+A = +3x^99 +5x^10 +4x^5 +2x^4
+B = +3x^99 +5x^10 +4x^5 +2x^4
+
+Compute C = A + B:  +6x^99 +10x^10 +8x^5 +4x^4
+
+A == B
+A == B
+
+Compute  Z1 = A2 - B2: 
+Compute  Z2 = B2 - A2: 
+
+Compute  D = A * B
+Before: D = +5x^7
+After:  D = +9x^198 +15x^109 +12x^104 +6x^103 +25x^20 +20x^15 +10x^14 +16x^10 +8x^9 +4x^8
+
+Test assignment operators
+Test binary mixed operators
+Y =  +3x^99 +5x^10 +4x^5 +2x^4
+X =  +9x^198 +15x^109 +12x^104 +6x^103 +25x^20 +20x^15 +10x^14 +16x^10 +8x^9 +4x^8
+Z =  +3x^99 +5x^10 +4x^5 +2x^4
+Y is now =  +9x^198 +15x^109 +12x^104 +6x^103 +3x^99 +25x^20 +20x^15 +10x^14 +21x^10 +8x^9 +4x^8 +4x^5 +2x^4
+X is now =  +9x^198 +15x^109 +12x^104 +6x^103 +3x^99 +25x^20 +20x^15 +10x^14 +21x^10 +8x^9 +4x^8 +4x^5 +2x^4
+Z is now =  +9x^198 +15x^109 +12x^104 +6x^103 +6x^99 +25x^20 +20x^15 +10x^14 +26x^10 +8x^9 +4x^8 +8x^5 +4x^4
+Test compund binary operators
+X = +9x^198 +15x^109 +12x^104 +6x^103 +3x^99 +25x^20 +20x^15 +10x^14 +21x^10 +8x^9 +4x^8 +4x^5 +2x^4
+Y = +6x^99 +10x^10 +8x^5 +4x^4
+
+Get and Set coefficient
+coeff of subscript 0 of D is: 0
+Doing getCoeff for term -20000
+D = +50x^20000 +9x^198 +15x^109 +12x^104 +6x^103 +25x^20 +20x^15 +10x^14 +16x^10 +8x^9 +4x^8 +50
+
+==38== 
+==38== HEAP SUMMARY:
+==38==     in use at exit: 72,704 bytes in 1 blocks
+==38==   total heap usage: 59 allocs, 58 frees, 176,116 bytes allocated
+==38== 
+==38== LEAK SUMMARY:
+==38==    definitely lost: 0 bytes in 0 blocks
+==38==    indirectly lost: 0 bytes in 0 blocks
+==38==      possibly lost: 0 bytes in 0 blocks
+==38==    still reachable: 72,704 bytes in 1 blocks
+==38==         suppressed: 0 bytes in 0 blocks
+==38== Rerun with --leak-check=full to see details of leaked memory
+==38== 
+==38== For counts of detected and suppressed errors, rerun with: -v
+==38== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;JOSH@DESKTOP-FMLE93V: /mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[01;32mJOSH@DESKTOP-FMLE93V[00m:[01;34m/mnt/c/Users/joshl/OneDrive/Documents/Classes/CSS343/Assignment1[00m$ exit
+exit
+
+Script done on Sat 06 Apr 2019 10:02:44 PM DST
